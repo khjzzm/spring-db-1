@@ -1,6 +1,7 @@
-package hello.jdbc.repository;
+package hello.jdbc.service;
 
 import hello.jdbc.domain.Member;
+import hello.jdbc.repository.MemberRepositoryV2;
 import hello.jdbc.service.MemberServiceV2;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 /**
  * 트랜잭션 - 커넥션 파라미터 전달 방식 동기화
  */
-class MemberRepositoryV2Test {
+class MemberServiceV2Test {
     private MemberRepositoryV2 memberRepository;
     private MemberServiceV2 memberService;
 
